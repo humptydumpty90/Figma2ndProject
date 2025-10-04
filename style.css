@@ -32,10 +32,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  overflow-x: hidden;
+}
 html {
   font-size: var(--font-size);
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -224,7 +227,7 @@ button {
   color: var(--white);
 }
 
-@media (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 767px) {
   .container {
     max-width: 1120px;
     width: 100%;
@@ -253,7 +256,7 @@ button {
     font-size: 32px;
   }
   .header_description {
-    width: 320px;
+    width: 270px;
   }
   .header_btn {
     width: 180px;
@@ -272,7 +275,7 @@ button {
     margin: 50px 50px 50px 50px;
   }
   .about-me_description {
-    width: 320px;
+    width: 270px;
   }
 
   .numbers_container {
@@ -299,7 +302,7 @@ button {
     margin: 0 0 20px 0;
   }
   .video-description {
-    width: 320px;
+    width: 270px;
     padding: 10px;
   }
   .video-img {
@@ -309,7 +312,7 @@ button {
   }
 
   .footer-container {
-    padding: 30px 300px 30px 0;
+    padding: 30px 180px 30px 0;
     text-align: center;
   }
 }
